@@ -184,6 +184,7 @@ body {
 }
 .preco-item {
     max-width: 600px;
+    min-width: 260px;
     flex: 1 1 0;
     border: 4px solid var(--menu-f-c1);
     padding: 20px;
@@ -231,7 +232,7 @@ body {
     border-radius: 50%;
 }
 .preco-item a {
-    max-width: 300px;
+    max-width: 150px;
     border: 4px solid var(--font-c1);
     margin: 30px;
     color: var(--font-c1);
@@ -239,4 +240,46 @@ body {
     align-self: center;
     text-transform: uppercase;
     padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.preco-item a:hover {
+    color: var(--font-c3);
+    border-color: var(--font-c3);
+}
+
+/* preco items */
+.qualidade {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.qualidade-item {
+    max-width: 280px;
+    padding: 20px;
+    margin: 20px;
+    /* border: 4px solid var(--bg-card-c1); */
+}
+.qualidade-item h2 {
+    display: flex;
+    color: var(--font-c3);
+    font-size: var(--font-s2);
+    line-height: 2;
+}
+.qualidade-item h2::before {
+    content: '';
+    width: 6px;
+    height: 25px;
+    background: #9f73ec;
+    display: block;
+    position: relative;
+    bottom: -11px;
+    margin-right: 8px;
+}
+.qualidade-item:nth-child(2) h2::before, .qualidade-item:nth-child(5) h2::before{
+    background: #d70b3e;
+}
+.qualidade-item:nth-child(3) h2::before, .qualidade-item:nth-child(6) h2::before{
+    background: #5ed1e4;
 }
