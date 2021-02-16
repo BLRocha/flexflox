@@ -7,6 +7,8 @@
     --font-s4: 2em;
 
     --font-c1: #222222;
+
+    --bg-header-c1: #122ab2;
 }
 
 /* reset css */
@@ -38,3 +40,21 @@ body {
 
 /* flex style */
 
+.superinfo-bg {
+    background:var(--bg-header-c1);
+    color: #fff;
+}
+.superinfo {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+.superinfo p, .superinfo a {
+    margin: 0 10px 10px 10px;
+}
+.superinfo > a {
+    color: #fff;
+}
