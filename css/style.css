@@ -1,0 +1,31 @@
+:root {
+    --font-s1: 1.125em;
+    --font-s2: 1.5em;
+    --font-s3: 1.75em;
+    --font-s4: 2em;
+}
+
+/* reset css */
+* {
+    box-sizing: border-box;
+}
+body, h1, h2, p, ul, a {
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 {
+    font-size: 16px;
+}
+a, a:visited {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* flex style */
+
