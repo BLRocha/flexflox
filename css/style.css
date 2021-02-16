@@ -1,8 +1,12 @@
+@import url(https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap);
+
 :root {
     --font-s1: 1.125em;
     --font-s2: 1.5em;
     --font-s3: 1.75em;
     --font-s4: 2em;
+
+    --font-c1: #222222;
 }
 
 /* reset css */
@@ -25,6 +29,11 @@ ul {
 img {
     display: block;
     max-width: 100%;
+}
+
+body {
+    font-family: "Nuninto", Helvetica, Arial, Helvetica, sans-serif;
+    color: var(--font-c1);
 }
 
 /* flex style */
