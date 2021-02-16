@@ -10,6 +10,8 @@
 
     --bg-header-c1: #122ab2;
     --bg-menu-c1: #2c70ff;
+
+    --menu-f-c1: #fff;
 }
 
 /* reset css */
@@ -48,7 +50,7 @@ body {
 
 .superinfo-bg {
     background:var(--bg-header-c1);
-    color: #fff;
+    color: var(--menu-f-c1);
 }
 .superinfo {
     display: flex;
@@ -60,11 +62,38 @@ body {
     margin: 0 10px 10px 10px;
 }
 .superinfo > a {
-    color: #fff;
+    color: var(--menu-f-c1);
 }
 
 /* menu nav */
 
 .menu-bg {
     background: var(--bg-menu-c1);    
+}
+.menu {
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu a {
+    color: var(--menu-f-c1);
+}
+.menu-logo {
+    font-size: var(--font-s3);
+    margin: 0 10px;
+}
+.menu-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu-nav a {
+    font-size: var(--font-s1);
+    display: block;
+    padding: 10px;
+    transition: all .4s ease-out;
+}
+.menu-nav a:hover {
+    color: var(--bg-header-c1);
 }
