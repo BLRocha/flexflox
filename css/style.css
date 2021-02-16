@@ -7,6 +7,7 @@
     --font-s4: 2em;
 
     --font-c1: #222222;
+    --font-c2: #7c7c7c;
 
     --bg-header-c1: #122ab2;
     --bg-menu-c1: #2c70ff;
@@ -96,4 +97,43 @@ body {
 }
 .menu-nav a:hover {
     color: var(--bg-header-c1);
+}
+
+/* Introdução */
+
+.introducao {
+    font-size: var(--font-s4);
+    line-height: 1;
+    margin: 0 auto;
+    padding: 60px 10px;
+}
+
+/* Sobre */
+
+.sobre {
+    border-top: 2px solid var(--bg-menu-c1);
+    border-bottom: 2px solid var(--bg-menu-c1);
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobre-info {
+    flex: 2 1 300px;
+    margin: 0 10px;
+}
+.sobre-info h2 {
+    font-size: var(--font-s3);
+    margin-bottom: .5em;
+}
+
+.sobre-info p {
+    font-size: var(--font-s1);
+    line-height: var(--font-s2);
+    color: var(--font-c2);
+}
+
+.sobre-img {
+    flex: 1 1 160px;
+    margin: 0 10px;
 }
